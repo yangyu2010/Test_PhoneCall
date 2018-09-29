@@ -1,0 +1,177 @@
+PODS:
+  - ActionProtocol (0.1.1)
+  - AFNetworking/NSURLSession (3.2.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.2.1)
+  - AFNetworking/Security (3.2.1)
+  - AFNetworking/Serialization (3.2.1)
+  - DBModel (0.1.17):
+    - DBModel/DBModel (= 0.1.17)
+    - ModuleCapability (~> 0.1)
+  - DBModel/DBModel (0.1.17):
+    - ModuleCapability (~> 0.1)
+  - FileSource (0.1.7):
+    - ModuleCapability (~> 0.1.1)
+  - Google-Mobile-Ads-SDK (7.34.0)
+  - LaunchManager (0.1.2)
+  - MJAdManager/AdapterAdMob (0.1.12):
+    - Google-Mobile-Ads-SDK (~> 7)
+    - MJAdManager/Core
+    - ModuleCapability
+  - MJAdManager/Core (0.1.12):
+    - ModuleCapability
+  - MJAlertManager (0.1.10):
+    - ModuleCapability
+  - MJAppCapability (0.1.0):
+    - ModuleCapability
+  - MJCacheManager (0.1.3):
+    - MJWebService (~> 0.1)
+    - ModuleCapability (~> 0.1)
+  - MJControllerManager (0.1.8):
+    - ActionProtocol
+    - ModuleCapability (~> 0.1)
+  - MJDevice (0.1.1):
+    - ModuleCapability
+  - MJIAPManager (0.1.34):
+    - ModuleCapability (~> 0.1.2)
+  - MJInterfaceManager (0.1.1):
+    - ModuleCapability (~> 0.1.2)
+    - WebInterface (~> 0.1.0)
+  - MJKeychain (0.1.4):
+    - ModuleCapability
+  - MJKeyManager (0.1.3):
+    - ModuleCapability (~> 0.1.2)
+  - MJLoadingView (0.1.4):
+    - ModuleCapability (~> 0.1.1)
+  - MJLocalize (0.1.7):
+    - ModuleCapability (~> 0.1.2)
+  - MJPlistViewController (0.1.6):
+    - ModuleCapability (~> 0.1)
+  - MJPushManager (0.1.1):
+    - ModuleCapability (~> 0.1.2)
+  - MJTabBarManager (0.1.8):
+    - ModuleCapability (~> 0.1.1)
+  - MJTimeManager (0.1.2):
+    - ModuleCapability (~> 0.1.2)
+  - MJToast (0.1.1)
+  - MJUtils (0.1.2):
+    - ModuleCapability (~> 0.1.2)
+  - MJWebService (0.1.26):
+    - AFNetworking/NSURLSession (~> 3)
+    - ModuleCapability (~> 0.1)
+  - MJWebViewController (0.1.7):
+    - ActionProtocol
+    - DBModel
+    - MJControllerManager
+    - MJUtils
+    - ModuleCapability
+  - ModuleCapability (0.1.10)
+  - PromotionManager (0.1.8):
+    - ModuleCapability (~> 0.1)
+  - WebInterface (0.1.10):
+    - ActionProtocol (~> 0.1)
+    - MJWebService (~> 0.1)
+    - ModuleCapability (~> 0.1)
+    - WebInterface/Core (= 0.1.10)
+  - WebInterface/Core (0.1.10):
+    - ActionProtocol (~> 0.1)
+    - MJWebService (~> 0.1)
+    - ModuleCapability (~> 0.1)
+
+DEPENDENCIES:
+  - DBModel
+  - FileSource
+  - LaunchManager
+  - MJAdManager/AdapterAdMob
+  - MJAlertManager
+  - MJAppCapability
+  - MJCacheManager
+  - MJControllerManager
+  - MJDevice
+  - MJIAPManager
+  - MJInterfaceManager
+  - MJKeychain
+  - MJKeyManager
+  - MJLoadingView
+  - MJLocalize
+  - MJPlistViewController
+  - MJPushManager
+  - MJTabBarManager
+  - MJTimeManager
+  - MJToast
+  - MJUtils
+  - MJWebService
+  - MJWebViewController
+  - ModuleCapability
+  - PromotionManager
+  - WebInterface
+
+SPEC REPOS:
+  "git@git.musjoy.com:PodSpecs.git":
+    - ActionProtocol
+    - DBModel
+    - FileSource
+    - LaunchManager
+    - MJAdManager
+    - MJAlertManager
+    - MJAppCapability
+    - MJCacheManager
+    - MJControllerManager
+    - MJDevice
+    - MJIAPManager
+    - MJInterfaceManager
+    - MJKeychain
+    - MJKeyManager
+    - MJLoadingView
+    - MJLocalize
+    - MJPlistViewController
+    - MJPushManager
+    - MJTabBarManager
+    - MJTimeManager
+    - MJToast
+    - MJUtils
+    - MJWebService
+    - MJWebViewController
+    - ModuleCapability
+    - PromotionManager
+    - WebInterface
+  https://github.com/cocoapods/specs.git:
+    - AFNetworking
+    - Google-Mobile-Ads-SDK
+
+SPEC CHECKSUMS:
+  ActionProtocol: 2331f4c31d5be0786c248920fceece0234cfe07f
+  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  DBModel: bdcd39da3fdf8f706992b78fdf7800204daa7290
+  FileSource: da29f32d1c03496875e395958dc4fd816f7298ba
+  Google-Mobile-Ads-SDK: a1cbce28c0c78ca1fb0b6c4f213485f55527c99f
+  LaunchManager: 585e896d015f79757b33bb3ea779e5cc98c215ee
+  MJAdManager: 8f73d92fe3bfe2fc662008910b0acc53064fc6ef
+  MJAlertManager: d0476f98b1b9fd5031d6e55475f331373cd3e741
+  MJAppCapability: 099d9a2496a12ea6675deda0cca6a329502fa527
+  MJCacheManager: f5b8f49228eddbe17812bfcf8bfb6257aa092e56
+  MJControllerManager: 297b217fc4c059e9c7f0f09469665f6f24298e28
+  MJDevice: 02c417aa5ee0e6aea39bb115f304dc0bc843ddc9
+  MJIAPManager: b95cb7e512686164d128bbe1feb51bf53b01a699
+  MJInterfaceManager: 3a7f03ad9e75b79c0ee9fa44c0904d11a26a36c9
+  MJKeychain: a1e938e83506a229de3e7a0387368599fb912ce2
+  MJKeyManager: 74a827f30f020426c222070388650fa5ce7a94d9
+  MJLoadingView: 3ddcf836cd4a242083e1d9291816a67b20cb95b1
+  MJLocalize: 35c731edcde4f0781250d5a720c1f346afd9212d
+  MJPlistViewController: a32e1df640734cda0dd753483d61dadd6d0f44c7
+  MJPushManager: c1f205f43729b5b4a36658e4d420caee26d12945
+  MJTabBarManager: b311a7a818284ec7096428de08b6ad63e795ebf2
+  MJTimeManager: b503ff4c12505552c0372718a0d2e7edc90dce8f
+  MJToast: 9c7e37ce0fc7ecc0b2193225fd2e60b53b30b1fc
+  MJUtils: 216985e6e62bfa8204b29639a66de760653b532a
+  MJWebService: 211d40d43d10a23cda9aeab86c42fcacbd5241aa
+  MJWebViewController: 5180d8495fdae9f5d28b6802289560574b5d2c63
+  ModuleCapability: 458b13fd20e195060b9f55451da78294e39da8f0
+  PromotionManager: 66789514b619fe4e7272f966db599d0572899e59
+  WebInterface: d70d88dc68e130f038a1e50aecd0a0e9c2843205
+
+PODFILE CHECKSUM: 3a7801ee5341ce23243d341bd33a0f74c6174e99
+
+COCOAPODS: 1.5.3
