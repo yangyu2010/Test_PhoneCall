@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "InterfaceUser.h"
+#import "InterfaceNumber.h"
 
 @interface ViewController ()
 
@@ -16,7 +18,27 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+
+//    [InterfaceUser userLoginCompletion:^(BOOL isSucceed, NSString *message, id data) {
+//
+//    }];
+    
+//    [InterfaceUser userRecentBillsCompletion:^(BOOL isSucceed, NSString *message, id data) {
+//
+//    }];
+    
+    
+//    [InterfaceNumber numberHotList:0 completion:^(BOOL isSucceed, NSString *message, id data) {
+//
+//    }];
+    
+    [InterfaceNumber numberChargeDetail:1 completion:^(BOOL isSucceed, NSString *message, id data) {
+        
+    }];
+    
+//    [InterfaceNumber numberCountryListCompletion:^(BOOL isSucceed, NSString *message, id data) {
+//
+//    }];
 }
 
 

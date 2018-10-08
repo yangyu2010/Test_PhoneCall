@@ -36,7 +36,7 @@ PODS:
     - ModuleCapability
   - MJIAPManager (0.1.34):
     - ModuleCapability (~> 0.1.2)
-  - MJInterfaceManager (0.1.1):
+  - MJInterfaceManager (0.1.2):
     - ModuleCapability (~> 0.1.2)
     - WebInterface (~> 0.1.0)
   - MJKeychain (0.1.4):
@@ -70,12 +70,12 @@ PODS:
   - ModuleCapability (0.1.10)
   - PromotionManager (0.1.8):
     - ModuleCapability (~> 0.1)
-  - WebInterface (0.1.10):
+  - WebInterface (0.1.13):
     - ActionProtocol (~> 0.1)
     - MJWebService (~> 0.1)
     - ModuleCapability (~> 0.1)
-    - WebInterface/Core (= 0.1.10)
-  - WebInterface/Core (0.1.10):
+    - WebInterface/Core (= 0.1.13)
+  - WebInterface/Core (0.1.13):
     - ActionProtocol (~> 0.1)
     - MJWebService (~> 0.1)
     - ModuleCapability (~> 0.1)
@@ -155,7 +155,7 @@ SPEC CHECKSUMS:
   MJControllerManager: 297b217fc4c059e9c7f0f09469665f6f24298e28
   MJDevice: 02c417aa5ee0e6aea39bb115f304dc0bc843ddc9
   MJIAPManager: b95cb7e512686164d128bbe1feb51bf53b01a699
-  MJInterfaceManager: 3a7f03ad9e75b79c0ee9fa44c0904d11a26a36c9
+  MJInterfaceManager: a9b1942b72e41d7df188d21f89ea1d04d560c5d1
   MJKeychain: a1e938e83506a229de3e7a0387368599fb912ce2
   MJKeyManager: 74a827f30f020426c222070388650fa5ce7a94d9
   MJLoadingView: 3ddcf836cd4a242083e1d9291816a67b20cb95b1
@@ -170,8 +170,8 @@ SPEC CHECKSUMS:
   MJWebViewController: 5180d8495fdae9f5d28b6802289560574b5d2c63
   ModuleCapability: 458b13fd20e195060b9f55451da78294e39da8f0
   PromotionManager: 66789514b619fe4e7272f966db599d0572899e59
-  WebInterface: d70d88dc68e130f038a1e50aecd0a0e9c2843205
+  WebInterface: 69a1cf00829449d432370a6946bf074f70afdcd1
 
-PODFILE CHECKSUM: 3a7801ee5341ce23243d341bd33a0f74c6174e99
+PODFILE CHECKSUM: e3b6a331ce7713e06371b60ca6a5c5c775f3bca6
 
 COCOAPODS: 1.5.3

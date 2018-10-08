@@ -1,6 +1,6 @@
 source 'git@git.musjoy.com:PodSpecs.git'
 source 'https://github.com/CocoaPods/Specs.git'
-
+inhibit_all_warnings!
 platform :ios, '10.0'
 
 

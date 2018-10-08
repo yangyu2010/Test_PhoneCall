@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import <MJPushManager.h>
+#import <MJInterfaceManager.h>
 
 @interface AppDelegate ()
 
@@ -17,6 +19,10 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    /// 注册设备
+    [MJInterfaceManager deviceRegister];
+    
     return YES;
 }
 
@@ -46,6 +52,28 @@
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
+
+
+#pragma mark- Notification
+- (void)application:(UIApplication *)app didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
+    
+    //    NSString *deviceTokenString = [[[[deviceToken description]
+    //                                     stringByReplacingOccurrencesOfString: @"<" withString: @""]
+    //                                    stringByReplacingOccurrencesOfString: @">" withString: @""]
+    //                                   stringByReplacingOccurrencesOfString: @" " withString: @""];
+    //
+    //    LogInfo(@"deviceToken: %@", deviceTokenString);
+    
+    /// 发送token到服务器
+    [[MJPushManager sharedInstance] registSucceedWith:deviceToken];
+}
+
+- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo fetchCompletionHandler:(nonnull void (^)(UIBackgroundFetchResult))completionHandler {
+    
+
+    
+}
+
 
 
 @end
