@@ -12,18 +12,18 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+/// 区域list model
 @interface PCAreaList : DBModel
 
 @property (nonatomic, strong) NSArray <PCArea *> *dataList;
 
 @end
 
-
+/// 区域model
 @interface PCArea : DBModel
 
 /// 地区码
 @property (nonatomic, copy) NSString *areaCode;
-
 /// 地区名称
 @property (nonatomic, copy) NSString *areaName;
 

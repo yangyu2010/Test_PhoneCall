@@ -1,10 +1,11 @@
 //
-//  PCHotNumberList.h
+//  PCNumberList.h
 //  Test_PhoneCall
 //
-//  Created by Yang Yu on 2018/10/8.
+//  Created by Yang Yu on 2018/10/9.
 //  Copyright © 2018 Musjoy. All rights reserved.
 //  热门号码model
+//  搜索号码等列表
 
 #import <Foundation/Foundation.h>
 #import <DBModel/DBModel.h>
@@ -13,7 +14,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface PCHotNumberList : NSObject
+@interface PCNumberList : DBModel
 
 /// 号码详情列表
 @property (nonatomic, strong) NSArray <PCNumber *> *numbers;
@@ -23,7 +24,6 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign) NSInteger isRemain;
 
 @end
-
 
 
 @interface PCNumber : DBModel
@@ -48,5 +48,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 @end
+
 
 NS_ASSUME_NONNULL_END

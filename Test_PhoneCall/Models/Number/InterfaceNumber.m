@@ -7,6 +7,10 @@
 //
 
 #import "InterfaceNumber.h"
+#import "PCCountryList.h"
+#import "PCAreaList.h"
+#import "PCNumberList.h"
+#import "PCUser.h"
 
 @implementation InterfaceNumber
 
@@ -36,6 +40,9 @@
     
     [InterfaceManager startRequest:API_NUMBER_CHARGEDETAIL describe:API_NUMBER_CHARGEDETAIL body:body header:nil completion:^(BOOL isSucceed, NSString *message, id data) {
         
+        
+
+        
     }];
     
 }
@@ -46,6 +53,19 @@
     
     [InterfaceManager startRequest:API_NUMBER_COUNTRYLIST describe:API_NUMBER_COUNTRYLIST body:nil header:nil completion:^(BOOL isSucceed, NSString *message, id data) {
         
+        if (isSucceed == NO) {
+            NSError *err = data;
+            completion? completion(NO, err.localizedDescription, err) : 0;
+            return ;
+        }
+        
+        NSError *error = nil;
+        PCCountryList *list = [[PCCountryList alloc] initWithDictionary:data error:&error];
+        if (error) {
+            completion? completion(NO, error.localizedDescription, error) : 0;
+        } else {
+            completion? completion(YES, message, list) : 0;
+        }
     }];
 }
 
@@ -53,6 +73,26 @@
 + (void)numberAreaListInCountry:(NSString *)countryCode
                      completion:(ActionCompleteBlock)completion {
     
+    NSDictionary *body = @{
+                           @"countryCode": countryCode,
+                           };
+    
+    [InterfaceManager startRequest:API_NUMBER_AREALISTINCOUNTRY describe:API_NUMBER_AREALISTINCOUNTRY body:body header:nil completion:^(BOOL isSucceed, NSString *message, id data) {
+        
+        if (isSucceed == NO) {
+            NSError *err = data;
+            completion? completion(NO, err.localizedDescription, err) : 0;
+            return ;
+        }
+        
+        NSError *error = nil;
+        PCAreaList *list = [[PCAreaList alloc] initWithDictionary:data error:&error];
+        if (error) {
+            completion? completion(NO, error.localizedDescription, error) : 0;
+        } else {
+            completion? completion(YES, message, list) : 0;
+        }
+    }];
     
 }
 
@@ -61,6 +101,27 @@
                          areaCode:(NSString *)areaCode
                        completion:(ActionCompleteBlock)completion {
     
+    NSDictionary *body = @{
+                           @"countryCode": countryCode,
+                           @"areaCode": areaCode,
+                           };
+    
+    [InterfaceManager startRequest:API_NUMBER_NUMBERLISTINCOUNTRYORAREA describe:API_NUMBER_NUMBERLISTINCOUNTRYORAREA body:body header:nil completion:^(BOOL isSucceed, NSString *message, id data) {
+        
+        if (isSucceed == NO) {
+            NSError *err = data;
+            completion? completion(NO, err.localizedDescription, err) : 0;
+            return ;
+        }
+        
+        NSError *error = nil;
+        PCNumberList *list = [[PCNumberList alloc] initWithDictionary:data error:&error];
+        if (error) {
+            completion? completion(NO, error.localizedDescription, error) : 0;
+        } else {
+            completion? completion(YES, message, list) : 0;
+        }
+    }];
     
 }
 
@@ -93,6 +154,18 @@
     
     [InterfaceManager startAuthRequest:API_NUMBER_SETASMAIN describe:API_NUMBER_SETASMAIN body:body completion:^(BOOL isSucceed, NSString *message, id data) {
         
+//        if (isSucceed == NO) {
+//            NSError *err = data;
+//            completion? completion(NO, err.localizedDescription, err) : 0;
+//            return ;
+//        }
+
+        if (isSucceed) {
+            [PCUser updateUserInfo:data];
+        }
+        
+        completion? completion(YES, message, data) : 0;
+
     }];
 }
 
